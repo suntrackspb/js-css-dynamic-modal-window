@@ -22,7 +22,7 @@ const toHTML = data => `
         <img class="card-img-top" src="${data.img}" alt="${data.title}">
         </div>
         <div class="card-bottom">
-            <h3 class="card-title">${data.title}</h3>
+            <h2 class="card-title">${data.title}</h2>
             <a href="#" class="btn btn-primary" data-id="${data.id}" data-btn="showinfo">Show info</a>
             
         </div>
