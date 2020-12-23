@@ -1,6 +1,9 @@
 body {
     color: #333333;
 }
+img {
+    filter: invert();
+}
 .vmodal {
     padding: 1px;
 }
