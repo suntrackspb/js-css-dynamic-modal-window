@@ -1,0 +1,131 @@
+body {
+    color: #333333;
+}
+.vmodal {
+    padding: 1px;
+}
+.vmodal.open .modal-overlay,
+.vmodal.open .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+.vmodal.hide .modal-overlay,
+.vmodal.hide .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.vmodal.open .modal-window {
+    transform: translateY(100px);
+}
+.vmodal.open .modal-overlay {
+    background: rgba(0, 0, 0, .7);
+}
+
+.vmodal.hide .modal-window {
+    transform: translateY(-200px);
+}
+.vmodal.hide .modal-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.modal-window, .modal-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .2s ease-in;
+}
+
+.modal-window {
+    width: 600px;
+    border-radius: 20px;
+    color: #ffffff;
+    background: linear-gradient(90turn, #5A4971, #7783CC, #565C97);
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform .2s ease-in;
+}
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+}
+.modal-title {
+    font-size: 1.5rem;
+}
+.modal-close {
+    cursor: pointer;
+}
+.modal-body {
+    padding: 10px;
+}
+.modal-body p {
+    margin: 0 0 0 5px;
+}
+.modal-footer {
+    padding: 5px 10px;
+    border-top: 1px solid #333333;
+}
+
+.card-img-top {
+    padding: 20px;
+}
+.card-title{
+    text-align: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn{
+    margin-top: 10px;
+}
+.container h1 {
+    text-align: center;
+    font-family: 'Langar', cursive;
+    padding-top: 20px;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 100px;
+    perspective: 600px;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90turn, #5A4971, #7783CC, #565C97);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px #161616;
+    transition: .5s;
+    transform: rotate3d(1, 0, 0, 45deg) translate3d(0, -120px, -50px) scale3d(0.8, 0.8, 1);
+}
+.card:hover {
+    transform: rotate3d(0, 0, 0, 45deg) translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+.card-top {
+
+    position: relative;
+    overflow: hidden;
+}
+.card-bottom {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
